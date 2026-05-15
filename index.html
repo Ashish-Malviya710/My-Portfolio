@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Kumar—Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
+
+    <!-- Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:1099">
+        <div id="successToast" class="toast align-items-center" role="alert" aria-live="assertive">
+            <div class="d-flex">
+                <div class="toast-body fw-semibold"><i class="bi bi-check-circle-fill text-success me-2"></i>Message
+                    sent successfully! I'll reply soon.</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="images/name.jpg" alt="Logo" class="logo-img">
+    <span class="ms-2">Ashish Kumar<span>.</span></span>
+</a>
+            <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="#hire" class="btn btn-hire">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="hero-badge mb-4"><span class="dot"></span>Open to internship & job opportunities</div>
+                    <h1 class="hero-title">Hi, I'm Ashish<br>I build <span class="accent" id="typingText"></span><span
+                            class="cursor"></span></h1>
+                    <p class="hero-desc mb-4">B.Tech CS student at Poornima University, Jaipur, passionate about
+                        building full stack web applications and software that solve real-world problems.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#work" class="btn btn-primary-custom"><i class="bi bi-grid me-2"></i>View My Work</a>
+                        <a href="#contact" class="btn btn-outline-custom"><i class="bi bi-chat-dots me-2"></i>Get In
+                            Touch</a>
+                        <a href="images/Ashish-kumar-resume.pdf" download class="btn btn-cv"><i
+                                class="bi bi-download me-2"></i>My CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+                    <div class="hero-img-wrap"><img src="images/first.jpg" alt="Ashish Kumar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down"><span>Scroll</span><i class="bi bi-chevron-down scroll-arrow"></i></div>
+    </section>
+
+    <!-- About + Education -->
+    <section id="about">
+        <div class="container">
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-5">
+                    <div class="about-img" style="aspect-ratio:4/5;"><img src="images/a2.jpeg" alt="Workspace"></div>
+                </div>
+                <div class="col-lg-7">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-title">A curious mind on a mission to build meaningful software</h2>
+                    <p class="text-secondary mb-3" style="font-size:0.98rem;">I'm Ashish Kumar, a 20-year-old Computer
+                        Science engineering student from Sirohi, Rajasthan, currently studying at Poornima University,
+                        Jaipur. My journey into coding started with a simple curiosity — how do websites actually work?
+                    </p>
+                    <p class="text-secondary mb-4" style="font-size:0.98rem;">I spend my free time building projects,
+                        learning new frameworks, and pushing myself beyond the syllabus. My goal: become a proficient
+                        full stack web and software engineer.</p>
+
+                    <ul class="about-list list-unstyled mb-4">
+                        <li><i class="bi bi-mortarboard-fill"></i> B.Tech CSE at Poornima University, Jaipur</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> Originally from Sirohi, Rajasthan</li>
+                        <li><i class="bi bi-bullseye"></i> Focused on Full Stack & Software Engineering</li>
+                        <li><i class="bi bi-briefcase-fill"></i> Actively seeking internship / job roles</li>
+                    </ul>
+
+                    <a href="images/Ashish-kumar-resume.pdf" download class="btn btn-cv mb-4"><i
+                            class="bi bi-file-earmark-arrow-down me-2"></i>Download My CV</a>
+
+                    <div class="row g-3" id="aboutStats">
+                        <div class="col-4">
+                            <div class="custom-card stat-card">
+                                <div class="stat-num" data-count="8">0</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="custom-card stat-card">
+                                <div class="stat-num" data-count="11">0</div>
+                                <div class="stat-label">Technologies</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="custom-card stat-card">
+                                <div class="stat-num" data-count="2">0</div>
+                                <div class="stat-label">Years Learning</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education inside About -->
+                    <div class="custom-card p-4 mt-4">
+                        <span class="section-label" style="font-size:0.72rem; margin-bottom:10px;">Education</span>
+                        <div class="edu-card">
+                            <div class="edu-icon-box"><i class="bi bi-building"></i></div>
+                            <h4 class="edu-degree">Bachelor of Technology — Computer Science</h4>
+                            <p class="edu-school"><i class="bi bi-geo-alt"></i> Poornima University, Jaipur, Rajasthan
+                            </p>
+                            <div class="edu-meta">
+                                <span class="edu-meta-item"><i class="bi bi-calendar3"></i> 2023 — 2027</span>
+                                <span class="edu-meta-item"><i class="bi bi-book"></i> Full-time Degree</span>
+                            </div>
+                            <p class="edu-desc">Studying core computer science fundamentals — Data Structures,
+                                Algorithms, DBMS, Operating Systems, OOP, and Software Engineering — alongside
+                                self-taught frontend and backend technologies through personal projects and online
+                                courses.</p>
+                            <div class="edu-subjects">
+                                <span class="edu-subject-chip"><i class="bi bi-diagram-3"></i>DSA</span>
+                                <span class="edu-subject-chip"><i class="bi bi-code-slash"></i>Algorithms</span>
+                                <span class="edu-subject-chip"><i class="bi bi-database"></i>DBMS</span>
+                                <span class="edu-subject-chip"><i class="bi bi-pc-display"></i>OS</span>
+                                <span class="edu-subject-chip"><i class="bi bi-boxes"></i>OOP</span>
+                                <span class="edu-subject-chip"><i class="bi bi-gear"></i>Software Eng.</span>
+                            </div>
+                            <div class="edu-status"><span class="pulse-dot"></span> Currently Pursuing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" style="background-color: var(--card-bg);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">My Hobbies</span>
+                <h2 class="section-title">Things I love doing</h2>
+                <p class="section-desc mx-auto">Life isn't just about code. Here's what keeps me going when I'm not
+                    staring at a screen.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card p-4 hobby-card text-center h-100">
+                        <div class="hobby-icon cricket mx-auto"><i class="bi bi-trophy"></i></div>
+                        <h6>Playing Cricket</h6>
+                        <p>I love playing cricket with my friends — whether it's a quick gully cricket match or a proper
+                            game on the ground. It keeps me active and teaches teamwork.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card p-4 hobby-card text-center h-100">
+                        <div class="hobby-icon movies mx-auto"><i class="bi bi-film"></i></div>
+                        <h6>Watching Movies & Web Series</h6>
+                        <p>From Bollywood blockbusters to thriller web series on Netflix and Prime — I enjoy stories
+                            that keep me hooked till the end. My go-to stress buster after a long day of coding.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="custom-card p-4 hobby-card text-center h-100">
+                        <div class="hobby-icon travel mx-auto"><i class="bi bi-compass"></i></div>
+                        <h6>Traveling</h6>
+                        <p>Coming from Sirohi, a small town in Rajasthan, every trip to a new city feels exciting. I
+                            love exploring new places, trying local food, and capturing memories along the way.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">My Toolkit</span>
+                <h2 class="section-title">Technologies I work with</h2>
+                <p class="section-desc mx-auto">11 technologies I use to build and ship full stack projects from
+                    scratch.</p>
+            </div>
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card p-4 h-100">
+                        <h5 class="fw-bold mb-3"><i class="bi bi-window-stack me-2"
+                                style="color:var(--accent)"></i>Frontend</h5>
+                        <div class="d-flex flex-wrap gap-2"><span class="skill-chip"><i
+                                    class="bi bi-filetype-html ic-html"></i>HTML</span><span class="skill-chip"><i
+                                    class="bi bi-filetype-css ic-css"></i>CSS</span><span class="skill-chip"><i
+                                    class="bi bi-filetype-js ic-js"></i>JavaScript</span><span class="skill-chip"><i
+                                    class="bi bi-bootstrap ic-bootstrap"></i>Bootstrap</span><span class="skill-chip"><i
+                                    class="bi bi-filetype-tsx ic-react"></i>ReactJS</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card p-4 h-100">
+                        <h5 class="fw-bold mb-3"><i class="bi bi-hdd-rack me-2" style="color:var(--accent)"></i>Backend
+                        </h5>
+                        <div class="d-flex flex-wrap gap-2"><span class="skill-chip"><i
+                                    class="bi bi-hdd-network ic-node"></i>Node.js</span><span class="skill-chip"><i
+                                    class="bi bi-speedometer2 ic-express"></i>Express.js</span><span
+                                class="skill-chip"><i class="bi bi-filetype-java ic-java"></i>Core Java</span><span
+                                class="skill-chip"><i class="bi bi-droplet-half ic-flask"></i>Python Flask</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="custom-card p-4 h-100">
+                        <h5 class="fw-bold mb-3"><i class="bi bi-database-gear me-2"
+                                style="color:var(--accent)"></i>Database</h5>
+                        <div class="d-flex flex-wrap gap-2"><span class="skill-chip"><i
+                                    class="bi bi-leaf ic-mongo"></i>MongoDB</span><span class="skill-chip"><i
+                                    class="bi bi-database ic-sql"></i>SQL</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-card p-4 p-lg-5">
+                <h5 class="fw-bold mb-4"><i class="bi bi-graph-up me-2" style="color:var(--accent)"></i>Proficiency
+                    Level</h5>
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1 "><span class="fw-medium"
+                                    style="font-size:0.86rem;">HTML</span><span
+                                    style="font-size:0.82rem;color:var(--accent);font-weight:600;">92%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1"><span class="fw-medium"
+                                    style="font-size:0.86rem;">CSS</span><span
+                                    style="font-size:0.82rem;color:var(--accent);font-weight:600;">88%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1"><span class="fw-medium"
+                                    style="font-size:0.86rem;">JavaScript</span><span
+                                    style="font-size:0.82rem;color:var(--accent);font-weight:600;">78%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1"><span class="fw-medium"
+                                    style="font-size:0.86rem;">Bootstrap Framework</span><span
+                                    style="font-size:0.82rem;color:var(--accent);font-weight:600;">90%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1"><span class="fw-medium"
+                                    style="font-size:0.86rem;">ReactJS</span><span
+                                    style="font-size:0.82rem;color:var(--accent);font-weight:600;">65%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4 mb-md-0">
+                            <div class="d-flex justify-content-between mb-1"><span class="fw-medium"
+                                    style="font-size:0.86rem;">Node.js</span><span
+                                    style="font-size:0.82rem;color:var(--accent);font-weight:600;">68%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="68"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1"><span class="fw-medium"
+                                    style="font-size:0.86rem;">Express.js</span><span
+                                    style="font-size:0.82rem;color:var(--accent);font-weight:600;">62%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="62"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1"><span class="fw-medium"
+                                    style="font-size:0.86rem;">MongoDB</span><span
+                                    style="font-size:0.82rem;color:var(--accent);font-weight:600;">70%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1"><span class="fw-medium"
+                                    style="font-size:0.86rem;">SQL</span><span
+                                    style="font-size:0.82rem;color:var(--accent);font-weight:600;">75%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1"><span class="fw-medium"
+                                    style="font-size:0.86rem;">Core Java</span><span
+                                    style="font-size:0.82rem;color:var(--accent);font-weight:600;">72%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="72"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between mb-1"><span class="fw-medium"
+                                    style="font-size:0.86rem;">Python Flask</span><span
+                                    style="font-size:0.82rem;color:var(--accent);font-weight:600;">60%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" style="background-color: var(--card-bg);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Projects I've built</h2>
+                <p class="section-desc mx-auto">8 real projects hosted on GitHub, each solving a different problem with
+                    a different tech stack.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-2 justify-content-center mb-4" id="filterBar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="game">Games</button>
+            </div>
+            <div class="row g-4" id="projectsGrid">
+                <div class="col-lg-4 col-md-6 project-card" data-category="fullstack">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
+                                src="images/WhatsApp Image 2026-04-07 at 16.31.19.jpeg"
+                                class="card-img-top w-100 h-100 object-fit-cover" alt="Employee Management System">
+                            <div class="project-overlay"><a
+                                    href="https://github.com/Ashish-Malviya710/Employee-management-System"
+                                    target="_blank" class="overlay-btn"><i class="bi bi-github"></i></a></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">Core Java</span><span
+                                    class="tag">SQL</span><span class="tag">JDBC</span></div>
+                            <h6 class="fw-bold mb-2">Employee Management System</h6>
+                            <p class="text-secondary mb-3" style="font-size:0.86rem;">Complete employee management with
+                                add, view, update, delete operations. Department-wise filtering, salary tracking, and
+                                search with SQL database.</p><a
+                                href="https://github.com/Ashish-Malviya710/Employee-management-System" target="_blank"
+                                class="project-link">View on GitHub <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 project-card" data-category="fullstack">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
+                                src="images/News.jpeg" class="card-img-top w-100 h-100 object-fit-cover" alt="NewsArea">
+                            <div class="project-overlay"><a href="https://github.com/Ashish-Malviya710/NewsArea"
+                                    target="_blank" class="overlay-btn"><i class="bi bi-github"></i></a></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">ReactJS</span><span
+                                    class="tag">Node.js</span><span class="tag">MongoDB</span></div>
+                            <h6 class="fw-bold mb-2">NewsArea</h6>
+                            <p class="text-secondary mb-3" style="font-size:0.86rem;">News aggregation platform to
+                                browse news by category, bookmark articles, and search content. Built with MERN stack
+                                and responsive design.</p><a href="https://github.com/Ashish-Malviya710/NewsArea"
+                                target="_blank" class="project-link">View on GitHub <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 project-card" data-category="frontend">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
+                                src="images/Amazon.jpeg" class="card-img-top w-100 h-100 object-fit-cover"
+                                alt="Amazon Clone">
+                            <div class="project-overlay"><a href="https://github.com/Ashish-Malviya710/Amazon-clone"
+                                    target="_blank" class="overlay-btn"><i class="bi bi-github"></i></a></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">HTML</span><span
+                                    class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                            <h6 class="fw-bold mb-2">Amazon Clone</h6>
+                            <p class="text-secondary mb-3" style="font-size:0.86rem;">Pixel-accurate frontend clone of
+                                Amazon. Product grid, carousel, rating stars, add-to-cart UI, and responsive navbar with
+                                search.</p><a href="https://github.com/Ashish-Malviya710/Amazon-clone" target="_blank"
+                                class="project-link">View on GitHub <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 project-card" data-category="fullstack">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
+                                src="images/Emp.jpeg" class="card-img-top w-100 h-100 object-fit-cover"
+                                alt="Zaika Nation">
+                            <div class="project-overlay"><a href="https://github.com/Ashish-Malviya710/Zaika-Nation.git" target="_blank"
+                                    class="overlay-btn"><i class="bi bi-github"></i></a></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">HTML</span><span
+                                    class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                            <h6 class="fw-bold mb-2">Zaika Nation</h6>
+                            <p class="text-secondary mb-3" style="font-size:0.86rem;">A food/restaurant website with
+                                menu category filtering, dish details, and a visually rich UI designed for a great
+                                browsing experience.</p><a href="https://github.com/Ashish-Malviya710/Zaika-Nation.git" target="_blank"
+                                class="project-link">View on GitHub <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 project-card" data-category="fullstack">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
+                                src="images/portfolio.png" class="card-img-top w-100 h-100 object-fit-cover"
+                                alt="Zaika Nation">
+                            <div class="project-overlay"><a href="https://github.com/Ashish-Malviya710/My-portfolio" target="_blank"
+                                    class="overlay-btn"><i class="bi bi-github"></i></a></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">HTML</span><span
+                                    class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                            <h6 class="fw-bold mb-2">Portfolio website</h6>
+                            <p class="text-secondary mb-3" style="font-size:0.86rem;">A modern and responsive portfolio website showcasing my skills, projects, and experience in web development. Built using HTML, CSS, JavaScript, and Bootstrap, this site highlights my ability to create user-friendly, visually appealing, and functional web applications.</p><a href="https://github.com/Ashish-Malviya710/My-portfolio" target="_blank"
+                                class="project-link">View on GitHub <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 project-card" data-category="game">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
+                                src="images/Word.png" class="card-img-top w-100 h-100 object-fit-cover"
+                                alt="Word Tiger">
+                            <div class="project-overlay"><a href="https://github.com/Ashish-Malviya710/Word_Tiger"
+                                    target="_blank" class="overlay-btn"><i class="bi bi-github"></i></a></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">JavaScript</span><span
+                                    class="tag">HTML</span><span class="tag">CSS</span></div>
+                            <h6 class="fw-bold mb-2">Word Tiger</h6>
+                            <p class="text-secondary mb-3" style="font-size:0.86rem;">About
+                                Text Utils is a simple, fast, and user‑friendly website that lets you analyze,
+                                transform, and format text with tools like case conversion, word count, and removal of
+                                extra spaces.</p><a href="https://github.com/Ashish-Malviya710/Word_Tiger"
+                                target="_blank" class="project-link">View on GitHub <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 project-card" data-category="game">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
+                                src="images/Rock.jpeg" class="card-img-top w-100 h-100 object-fit-cover"
+                                alt="Rock Paper Scissors">
+                            <div class="project-overlay"><a
+                                    href="https://github.com/Ashish-Malviya710/Rock-Paper-Scissors-game" target="_blank"
+                                    class="overlay-btn"><i class="bi bi-github"></i></a></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">JavaScript</span><span
+                                    class="tag">HTML</span><span class="tag">CSS</span></div>
+                            <h6 class="fw-bold mb-2">Rock Paper Scissors</h6>
+                            <p class="text-secondary mb-3" style="font-size:0.86rem;">Classic hand game for the browser.
+                                Play against the computer with animated gestures, score tracking, round history, and win
+                                streaks.</p><a href="https://github.com/Ashish-Malviya710/Rock-Paper-Scissors-game"
+                                target="_blank" class="project-link">View on GitHub <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 project-card" data-category="game">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
+                                src="images/Tic.jpeg" class="card-img-top w-100 h-100 object-fit-cover"
+                                alt="Tic Tac Toe">
+                            <div class="project-overlay"><a href="https://github.com/Ashish-Malviya710/TIC-TAC-GAME"
+                                    target="_blank" class="overlay-btn"><i class="bi bi-github"></i></a></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">JavaScript</span><span
+                                    class="tag">HTML</span><span class="tag">CSS</span></div>
+                            <h6 class="fw-bold mb-2">Tic Tac Toe</h6>
+                            <p class="text-secondary mb-3" style="font-size:0.86rem;">Two-player game with clean UI, win
+                                detection logic, draw handling, score counter, and reset functionality using DOM
+                                manipulation.</p><a href="https://github.com/Ashish-Malviya710/TIC-TAC-GAME"
+                                target="_blank" class="project-link">View on GitHub <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey -->
+    <section id="journey">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5"><span class="section-label">My Journey</span>
+                    <h2 class="section-title">From curiosity to code</h2>
+                    <p class="section-desc">Every step has been a learning experience. Here's how a student from Sirohi
+                        found his calling in software engineering.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2026 — Present</div>
+                            <div class="timeline-role">Full Stack Development Focus</div>
+                            <div class="timeline-place">Self-directed learning</div>
+                            <p class="timeline-desc">Deep diving into React, Node.js, Express.js, MongoDB, and Python
+                                Flask. Building full stack projects and actively applying for internships.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2025</div>
+                            <div class="timeline-role">Frontend, Backend & Games</div>
+                            <div class="timeline-place">Personal projects & courses</div>
+                            <p class="timeline-desc">Built Amazon Clone, Zaika Nation, NewsArea, and multiple games (Tic
+                                Tac Toe, Rock Paper Scissors, Word Tiger). Mastered HTML, CSS, JavaScript, Bootstrap,
+                                and Core Java.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-role">Started B.Tech at Poornima University</div>
+                            <div class="timeline-place">Jaipur, Rajasthan</div>
+                            <p class="timeline-desc">Enrolled in Computer Science engineering. Built Employee Management
+                                System as my first major project using Core Java and SQL.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Before 2024</div>
+                            <div class="timeline-role">The Spark</div>
+                            <div class="timeline-place">Sirohi, Rajasthan</div>
+                            <p class="timeline-desc">Growing up in a small town, always fascinated by computers and
+                                technology. The internet was my window to a bigger world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire -->
+    <section id="hire" class="hire-section">
+        <div class="container">
+            <div class="hire-inner">
+                <span class="d-inline-block bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-1 mb-3"
+                    style="font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;"><i
+                        class="bi bi-briefcase-fill me-1"></i> Actively Looking</span>
+                <h3 class="fw-bold mb-3" style="font-size:clamp(1.4rem,3vw,2rem);">I'm ready to contribute to a team
+                </h3>
+                <p class="text-secondary mx-auto mb-4" style="max-width:500px;">Whether it's a full-time role,
+                    internship, or freelance — I bring hunger to learn and discipline to deliver.</p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="#contact" class="btn btn-primary-custom"><i class="bi bi-envelope me-2"></i>Contact Me</a>
+                    <a href="images/Ashish-kumar-resume.pdf" download class="btn btn-cv"><i
+                            class="bi bi-download me-2"></i>Download CV</a>
+                    <a href="https://www.linkedin.com/in/ashish-kumar-019649351" target="_blank"
+                        class="btn btn-outline-custom"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Let's build something together</h2>
+                <p class="section-desc mx-auto">Have an internship opportunity or just want to connect?</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="custom-card p-3 mb-3">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value"><a
+                                        href="mailto:ashishmalvi0116@gmail.com">ashishmalvi0116@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-card p-3 mb-3">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="bi bi-phone"></i></div>
+                            <div>
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value"><a href="tel:+917014461430">+91 70144 61430</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-card p-3 mb-3">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                            <div>
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">Sirohi, Rajasthan, India</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-card p-3 mb-4">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="bi bi-mortarboard"></i></div>
+                            <div>
+                                <div class="contact-label">University</div>
+                                <div class="contact-value">Poornima University, Jaipur</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="https://github.com/Ashish-Malviya710" target="_blank" class="social-link"
+                            aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ashish-kumar-019649351" target="_blank" class="social-link"
+                            aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ashish_lohar098" target="_blank" class="social-link"
+                            aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="mailto:ashishmalvi0116@gmail.com" class="social-link" aria-label="Email"><i
+                                class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="custom-card p-4 p-lg-5">
+                        <form class="needs-validation" id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6"><label class="form-label" for="nameInput">Your Name</label><input
+                                        type="text" class="form-control" id="nameInput" placeholder="Your full name"
+                                        required minlength="2">
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                                <div class="col-md-6"><label class="form-label" for="emailInput">Your
+                                        Email</label><input type="email" class="form-control" id="emailInput"
+                                        placeholder="you@company.com" required>
+                                    <div class="invalid-feedback">Please enter a valid email.</div>
+                                </div>
+                                <div class="col-12"><label class="form-label" for="subjectInput">Purpose</label><select
+                                        class="form-select" id="subjectInput" required>
+                                        <option value="" disabled selected>What's this about?</option>
+                                        <option value="internship">Internship Opportunity</option>
+                                        <option value="job">Job Opportunity</option>
+                                        <option value="freelance">Freelance Project</option>
+                                        <option value="collab">Collaboration</option>
+                                        <option value="other">Something Else</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a purpose.</div>
+                                </div>
+                                <div class="col-12"><label class="form-label"
+                                        for="messageInput">Message</label><textarea class="form-control"
+                                        id="messageInput" rows="5" placeholder="Tell me about the opportunity..."
+                                        required minlength="10"></textarea>
+                                    <div class="invalid-feedback">Please write at least 10 characters.</div>
+                                </div>
+                                <div class="col-12"><button type="submit" class="btn btn-primary-custom w-100"><i
+                                            class="bi bi-send me-2"></i>Send Message</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <p class="footer-text">Designed & Built by <a href="#">Ashish Kumar</a> &copy; 2026</p>
+                <p class="footer-text"> <i class="bi bi-heart-fill" style="color:var(--accent);font-size:0.7rem;"></i>
+                    Poornima University, Jaipur</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init("GxuWYKaY294OUsyp3");
+        })();
+    </script>
+
+</body>
+
+</html>
