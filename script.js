@@ -1,3 +1,13 @@
+// Initialize AOS (Animate On Scroll)
+if (typeof AOS !== 'undefined') {
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 80
+    });
+}
+
 // Typing
 var words = ['full stack apps.', 'web experiences.', 'software solutions.', 'clean interfaces.', 'real-world products.'];
 var wordIdx = 0, charIdx = 0, isDeleting = false;
@@ -48,6 +58,9 @@ document.querySelectorAll('.filter-btn').forEach(function (btn) {
         document.querySelectorAll('.project-card').forEach(function (card) {
             card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
         });
+        if (typeof AOS !== 'undefined') {
+            AOS.refresh();
+        }
     });
 });
 
@@ -88,42 +101,59 @@ skillObserver.observe(document.getElementById('skills'));
 
 
 // ===============================
-// 🚀 UPDATED CONTACT FORM (EMAILJS) small backend 
+// 🚀 CONTACT FORM (EMAILJS INTEGRATION)
 // ===============================
 var contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', function (e) {
-    e.preventDefault();
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    if (contactForm.checkValidity()) {
+        if (contactForm.checkValidity()) {
+            var submitBtn = contactForm.querySelector('button[type="submit"]');
+            var originalBtnHtml = submitBtn ? submitBtn.innerHTML : 'Send Message';
 
-        let name = document.getElementById("nameInput").value;
-        let email = document.getElementById("emailInput").value;
-        let subject = document.getElementById("subjectInput").value;
-        let message = document.getElementById("messageInput").value;
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Sending...';
+            }
 
-        let templateParams = {
-            from_name: name,
-            from_email: email,
-            subject: subject,
-            message: message
-        };
+            let name = document.getElementById("nameInput").value.trim();
+            let email = document.getElementById("emailInput").value.trim();
+            let subject = document.getElementById("subjectInput").value;
+            let message = document.getElementById("messageInput").value.trim();
 
-        emailjs.send("service_h1zrxkw", "template_glri3ds", templateParams)
-            .then(function (response) {
+            let templateParams = {
+                from_name: name,
+                from_email: email,
+                reply_to: email,
+                subject: subject,
+                message: message
+            };
 
-                // Show success toast
-                new bootstrap.Toast(document.getElementById('successToast')).show();
+            emailjs.send("service_h1zrxkw", "template_glri3ds", templateParams)
+                .then(function (response) {
+                    var toastEl = document.getElementById('successToast');
+                    if (toastEl) {
+                        new bootstrap.Toast(toastEl).show();
+                    }
 
-                contactForm.reset();
-                contactForm.classList.remove('was-validated');
+                    contactForm.reset();
+                    contactForm.classList.remove('was-validated');
+                })
+                .catch(function (error) {
+                    alert("❌ Failed to send message. Please check your internet connection or try again later.");
+                    console.error("EmailJS Error:", error);
+                })
+                .finally(function () {
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalBtnHtml;
+                    }
+                });
 
-            }, function (error) {
-                alert("❌ Failed to send message. Try again!");
-                console.log(error);
-            });
-
-    } else {
-        contactForm.classList.add('was-validated');
-    }
-});
+        } else {
+            contactForm.classList.add('was-validated');
+        }
+    });
+}

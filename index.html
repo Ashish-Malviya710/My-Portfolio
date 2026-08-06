@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 
@@ -58,12 +59,12 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7">
-                    <div class="hero-badge mb-4"><span class="dot"></span>Open to internship & job opportunities</div>
-                    <h1 class="hero-title">Hi, I'm Ashish<br>I build <span class="accent" id="typingText"></span><span
+                    <div class="hero-badge mb-4" data-aos="fade-down" data-aos-delay="100"><span class="dot"></span>Open to internship & job opportunities</div>
+                    <h1 class="hero-title" data-aos="fade-right" data-aos-delay="200">Hi, I'm Ashish<br>I build <span class="accent" id="typingText"></span><span
                             class="cursor"></span></h1>
-                    <p class="hero-desc mb-4">B.Tech CS student at Poornima University, Jaipur, passionate about
+                    <p class="hero-desc mb-4" data-aos="fade-right" data-aos-delay="300">B.Tech CS student at Poornima University, Jaipur, passionate about
                         building full stack web applications and software that solve real-world problems.</p>
-                    <div class="d-flex gap-3 flex-wrap">
+                    <div class="d-flex gap-3 flex-wrap" data-aos="fade-up" data-aos-delay="400">
                         <a href="#work" class="btn btn-primary-custom"><i class="bi bi-grid me-2"></i>View My Work</a>
                         <a href="#contact" class="btn btn-outline-custom"><i class="bi bi-chat-dots me-2"></i>Get In
                             Touch</a>
@@ -71,7 +72,7 @@
                                 class="bi bi-download me-2"></i>My CV</a>
                     </div>
                 </div>
-                <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+                <div class="col-lg-5 d-none d-lg-flex justify-content-center" data-aos="zoom-in" data-aos-delay="400">
                     <div class="hero-img-wrap"><img src="images/first.jpg" alt="Ashish Kumar"></div>
                 </div>
             </div>
@@ -83,10 +84,10 @@
     <section id="about">
         <div class="container">
             <div class="row g-5 align-items-start">
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
                     <div class="about-img" style="aspect-ratio:4/5;"><img src="images/a2.jpeg" alt="Workspace"></div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
                     <span class="section-label">About Me</span>
                     <h2 class="section-title">A curious mind on a mission to build meaningful software</h2>
                     <p class="text-secondary mb-3" style="font-size:0.98rem;">I'm Ashish Kumar, a 20-year-old Computer
@@ -108,19 +109,19 @@
                             class="bi bi-file-earmark-arrow-down me-2"></i>Download My CV</a>
 
                     <div class="row g-3" id="aboutStats">
-                        <div class="col-4">
+                        <div class="col-4" data-aos="zoom-in" data-aos-delay="100">
                             <div class="custom-card stat-card">
                                 <div class="stat-num" data-count="8">0</div>
                                 <div class="stat-label">Projects</div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4" data-aos="zoom-in" data-aos-delay="200">
                             <div class="custom-card stat-card">
                                 <div class="stat-num" data-count="11">0</div>
                                 <div class="stat-label">Technologies</div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4" data-aos="zoom-in" data-aos-delay="300">
                             <div class="custom-card stat-card">
                                 <div class="stat-num" data-count="2">0</div>
                                 <div class="stat-label">Years Learning</div>
@@ -129,7 +130,7 @@
                     </div>
 
                     <!-- Education inside About -->
-                    <div class="custom-card p-4 mt-4">
+                    <div class="custom-card p-4 mt-4" data-aos="fade-up" data-aos-delay="300">
                         <span class="section-label" style="font-size:0.72rem; margin-bottom:10px;">Education</span>
                         <div class="edu-card">
                             <div class="edu-icon-box"><i class="bi bi-building"></i></div>
@@ -161,16 +162,16 @@
     </section>
 
     <!-- Hobbies -->
-    <section id="hobbies" style="background-color: var(--card-bg);">
+    <section id="hobbies">
         <div class="container">
-            <div class="text-center mb-5">
+            <div class="text-center mb-5" data-aos="fade-up">
                 <span class="section-label">My Hobbies</span>
                 <h2 class="section-title">Things I love doing</h2>
                 <p class="section-desc mx-auto">Life isn't just about code. Here's what keeps me going when I'm not
                     staring at a screen.</p>
             </div>
             <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="custom-card p-4 hobby-card text-center h-100">
                         <div class="hobby-icon cricket mx-auto"><i class="bi bi-trophy"></i></div>
                         <h6>Playing Cricket</h6>
@@ -178,7 +179,7 @@
                             game on the ground. It keeps me active and teaches teamwork.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="custom-card p-4 hobby-card text-center h-100">
                         <div class="hobby-icon movies mx-auto"><i class="bi bi-film"></i></div>
                         <h6>Watching Movies & Web Series</h6>
@@ -186,7 +187,7 @@
                             that keep me hooked till the end. My go-to stress buster after a long day of coding.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="300">
                     <div class="custom-card p-4 hobby-card text-center h-100">
                         <div class="hobby-icon travel mx-auto"><i class="bi bi-compass"></i></div>
                         <h6>Traveling</h6>
@@ -201,14 +202,14 @@
     <!-- Skills -->
     <section id="skills">
         <div class="container">
-            <div class="text-center mb-5">
+            <div class="text-center mb-5" data-aos="fade-up">
                 <span class="section-label">My Toolkit</span>
                 <h2 class="section-title">Technologies I work with</h2>
                 <p class="section-desc mx-auto">11 technologies I use to build and ship full stack projects from
                     scratch.</p>
             </div>
             <div class="row g-4 mb-4">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="custom-card p-4 h-100">
                         <h5 class="fw-bold mb-3"><i class="bi bi-window-stack me-2"
                                 style="color:var(--accent)"></i>Frontend</h5>
@@ -220,7 +221,7 @@
                                     class="bi bi-filetype-tsx ic-react"></i>ReactJS</span></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="custom-card p-4 h-100">
                         <h5 class="fw-bold mb-3"><i class="bi bi-hdd-rack me-2" style="color:var(--accent)"></i>Backend
                         </h5>
@@ -231,7 +232,7 @@
                                 class="skill-chip"><i class="bi bi-droplet-half ic-flask"></i>Python Flask</span></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="300">
                     <div class="custom-card p-4 h-100">
                         <h5 class="fw-bold mb-3"><i class="bi bi-database-gear me-2"
                                 style="color:var(--accent)"></i>Database</h5>
@@ -241,13 +242,13 @@
                     </div>
                 </div>
             </div>
-            <div class="custom-card p-4 p-lg-5">
+            <div class="custom-card p-4 p-lg-5" data-aos="fade-up" data-aos-delay="200">
                 <h5 class="fw-bold mb-4"><i class="bi bi-graph-up me-2" style="color:var(--accent)"></i>Proficiency
                     Level</h5>
-                <div class="row g-0">
+                <div class="row g-4 gx-lg-5">
                     <div class="col-md-6">
                         <div class="mb-4">
-                            <div class="d-flex justify-content-between mb-1 "><span class="fw-medium"
+                            <div class="d-flex justify-content-between mb-1"><span class="fw-medium"
                                     style="font-size:0.86rem;">HTML</span><span
                                     style="font-size:0.82rem;color:var(--accent);font-weight:600;">92%</span></div>
                             <div class="progress">
@@ -328,7 +329,7 @@
                                 <div class="progress-bar" data-width="72"></div>
                             </div>
                         </div>
-                        <div>
+                        <div class="mb-4 mb-md-0">
                             <div class="d-flex justify-content-between mb-1"><span class="fw-medium"
                                     style="font-size:0.86rem;">Python Flask</span><span
                                     style="font-size:0.82rem;color:var(--accent);font-weight:600;">60%</span></div>
@@ -340,25 +341,23 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Work -->
-    <section id="work" style="background-color: var(--card-bg);">
+      <!-- Work -->
+    <section id="work">
         <div class="container">
-            <div class="text-center mb-5">
+            <div class="text-center mb-5" data-aos="fade-up">
                 <span class="section-label">My Work</span>
                 <h2 class="section-title">Projects I've built</h2>
                 <p class="section-desc mx-auto">8 real projects hosted on GitHub, each solving a different problem with
                     a different tech stack.</p>
             </div>
-            <div class="d-flex flex-wrap gap-2 justify-content-center mb-4" id="filterBar">
+            <div class="d-flex flex-wrap gap-2 justify-content-center mb-4" id="filterBar" data-aos="fade-up" data-aos-delay="100">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="fullstack">Full Stack</button>
                 <button class="filter-btn" data-filter="frontend">Frontend</button>
                 <button class="filter-btn" data-filter="game">Games</button>
             </div>
             <div class="row g-4" id="projectsGrid">
-                <div class="col-lg-4 col-md-6 project-card" data-category="fullstack">
+                <div class="col-lg-4 col-md-6 project-card" data-category="fullstack" data-aos="fade-up" data-aos-delay="100">
                     <div class="custom-card overflow-hidden h-100">
                         <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
                                 src="images/WhatsApp Image 2026-04-07 at 16.31.19.jpeg"
@@ -369,7 +368,7 @@
                         </div>
                         <div class="card-body">
                             <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">Core Java</span><span
-                                    class="tag">SQL</span><span class="tag">JDBC</span></div>
+                                     class="tag">SQL</span><span class="tag">JDBC</span></div>
                             <h6 class="fw-bold mb-2">Employee Management System</h6>
                             <p class="text-secondary mb-3" style="font-size:0.86rem;">Complete employee management with
                                 add, view, update, delete operations. Department-wise filtering, salary tracking, and
@@ -379,7 +378,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 project-card" data-category="fullstack">
+                <div class="col-lg-4 col-md-6 project-card" data-category="fullstack" data-aos="fade-up" data-aos-delay="200">
                     <div class="custom-card overflow-hidden h-100">
                         <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
                                 src="images/News.jpeg" class="card-img-top w-100 h-100 object-fit-cover" alt="NewsArea">
@@ -388,7 +387,7 @@
                         </div>
                         <div class="card-body">
                             <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">ReactJS</span><span
-                                    class="tag">Node.js</span><span class="tag">MongoDB</span></div>
+                                     class="tag">Node.js</span><span class="tag">MongoDB</span></div>
                             <h6 class="fw-bold mb-2">NewsArea</h6>
                             <p class="text-secondary mb-3" style="font-size:0.86rem;">News aggregation platform to
                                 browse news by category, bookmark articles, and search content. Built with MERN stack
@@ -398,7 +397,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 project-card" data-category="frontend">
+                <div class="col-lg-4 col-md-6 project-card" data-category="frontend" data-aos="fade-up" data-aos-delay="300">
                     <div class="custom-card overflow-hidden h-100">
                         <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
                                 src="images/Amazon.jpeg" class="card-img-top w-100 h-100 object-fit-cover"
@@ -408,7 +407,7 @@
                         </div>
                         <div class="card-body">
                             <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">HTML</span><span
-                                    class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                                     class="tag">CSS</span><span class="tag">JavaScript</span></div>
                             <h6 class="fw-bold mb-2">Amazon Clone</h6>
                             <p class="text-secondary mb-3" style="font-size:0.86rem;">Pixel-accurate frontend clone of
                                 Amazon. Product grid, carousel, rating stars, add-to-cart UI, and responsive navbar with
@@ -417,7 +416,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 project-card" data-category="fullstack">
+                <div class="col-lg-4 col-md-6 project-card" data-category="fullstack" data-aos="fade-up" data-aos-delay="100">
                     <div class="custom-card overflow-hidden h-100">
                         <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
                                 src="images/Emp.jpeg" class="card-img-top w-100 h-100 object-fit-cover"
@@ -427,7 +426,7 @@
                         </div>
                         <div class="card-body">
                             <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">HTML</span><span
-                                    class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                                     class="tag">CSS</span><span class="tag">JavaScript</span></div>
                             <h6 class="fw-bold mb-2">Zaika Nation</h6>
                             <p class="text-secondary mb-3" style="font-size:0.86rem;">A food/restaurant website with
                                 menu category filtering, dish details, and a visually rich UI designed for a great
@@ -436,24 +435,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 project-card" data-category="fullstack">
+                <div class="col-lg-4 col-md-6 project-card" data-category="fullstack" data-aos="fade-up" data-aos-delay="200">
                     <div class="custom-card overflow-hidden h-100">
                         <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
                                 src="images/portfolio.png" class="card-img-top w-100 h-100 object-fit-cover"
-                                alt="Zaika Nation">
+                                alt="Portfolio Website">
                             <div class="project-overlay"><a href="https://github.com/Ashish-Malviya710/My-portfolio" target="_blank"
                                     class="overlay-btn"><i class="bi bi-github"></i></a></div>
                         </div>
                         <div class="card-body">
                             <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">HTML</span><span
-                                    class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                                     class="tag">CSS</span><span class="tag">JavaScript</span></div>
                             <h6 class="fw-bold mb-2">Portfolio website</h6>
                             <p class="text-secondary mb-3" style="font-size:0.86rem;">A modern and responsive portfolio website showcasing my skills, projects, and experience in web development. Built using HTML, CSS, JavaScript, and Bootstrap, this site highlights my ability to create user-friendly, visually appealing, and functional web applications.</p><a href="https://github.com/Ashish-Malviya710/My-portfolio" target="_blank"
                                 class="project-link">View on GitHub <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 project-card" data-category="game">
+                <div class="col-lg-4 col-md-6 project-card" data-category="game" data-aos="fade-up" data-aos-delay="300">
                     <div class="custom-card overflow-hidden h-100">
                         <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
                                 src="images/Word.png" class="card-img-top w-100 h-100 object-fit-cover"
@@ -463,7 +462,7 @@
                         </div>
                         <div class="card-body">
                             <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">JavaScript</span><span
-                                    class="tag">HTML</span><span class="tag">CSS</span></div>
+                                     class="tag">HTML</span><span class="tag">CSS</span></div>
                             <h6 class="fw-bold mb-2">Word Tiger</h6>
                             <p class="text-secondary mb-3" style="font-size:0.86rem;">About
                                 Text Utils is a simple, fast, and user‑friendly website that lets you analyze,
@@ -474,7 +473,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 project-card" data-category="game">
+                <div class="col-lg-4 col-md-6 project-card" data-category="game" data-aos="fade-up" data-aos-delay="100">
                     <div class="custom-card overflow-hidden h-100">
                         <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
                                 src="images/Rock.jpeg" class="card-img-top w-100 h-100 object-fit-cover"
@@ -485,7 +484,7 @@
                         </div>
                         <div class="card-body">
                             <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">JavaScript</span><span
-                                    class="tag">HTML</span><span class="tag">CSS</span></div>
+                                     class="tag">HTML</span><span class="tag">CSS</span></div>
                             <h6 class="fw-bold mb-2">Rock Paper Scissors</h6>
                             <p class="text-secondary mb-3" style="font-size:0.86rem;">Classic hand game for the browser.
                                 Play against the computer with animated gestures, score tracking, round history, and win
@@ -495,7 +494,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 project-card" data-category="game">
+                <div class="col-lg-4 col-md-6 project-card" data-category="game" data-aos="fade-up" data-aos-delay="200">
                     <div class="custom-card overflow-hidden h-100">
                         <div class="position-relative overflow-hidden" style="aspect-ratio:16/10;"><img
                                 src="images/Tic.jpeg" class="card-img-top w-100 h-100 object-fit-cover"
@@ -505,7 +504,7 @@
                         </div>
                         <div class="card-body">
                             <div class="d-flex flex-wrap gap-1 mb-2"><span class="tag">JavaScript</span><span
-                                    class="tag">HTML</span><span class="tag">CSS</span></div>
+                                     class="tag">HTML</span><span class="tag">CSS</span></div>
                             <h6 class="fw-bold mb-2">Tic Tac Toe</h6>
                             <p class="text-secondary mb-3" style="font-size:0.86rem;">Two-player game with clean UI, win
                                 detection logic, draw handling, score counter, and reset functionality using DOM
@@ -523,14 +522,14 @@
     <section id="journey">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-5"><span class="section-label">My Journey</span>
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100"><span class="section-label">My Journey</span>
                     <h2 class="section-title">From curiosity to code</h2>
                     <p class="section-desc">Every step has been a learning experience. Here's how a student from Sirohi
                         found his calling in software engineering.</p>
                 </div>
                 <div class="col-lg-7">
                     <div class="timeline">
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="100">
                             <div class="timeline-dot"></div>
                             <div class="timeline-date">2026 — Present</div>
                             <div class="timeline-role">Full Stack Development Focus</div>
@@ -538,7 +537,7 @@
                             <p class="timeline-desc">Deep diving into React, Node.js, Express.js, MongoDB, and Python
                                 Flask. Building full stack projects and actively applying for internships.</p>
                         </div>
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
                             <div class="timeline-dot"></div>
                             <div class="timeline-date">2025</div>
                             <div class="timeline-role">Frontend, Backend & Games</div>
@@ -547,7 +546,7 @@
                                 Tac Toe, Rock Paper Scissors, Word Tiger). Mastered HTML, CSS, JavaScript, Bootstrap,
                                 and Core Java.</p>
                         </div>
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="300">
                             <div class="timeline-dot"></div>
                             <div class="timeline-date">2024</div>
                             <div class="timeline-role">Started B.Tech at Poornima University</div>
@@ -555,7 +554,7 @@
                             <p class="timeline-desc">Enrolled in Computer Science engineering. Built Employee Management
                                 System as my first major project using Core Java and SQL.</p>
                         </div>
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
                             <div class="timeline-dot"></div>
                             <div class="timeline-date">Before 2024</div>
                             <div class="timeline-role">The Spark</div>
@@ -572,7 +571,7 @@
     <!-- Hire -->
     <section id="hire" class="hire-section">
         <div class="container">
-            <div class="hire-inner">
+            <div class="hire-inner" data-aos="zoom-in" data-aos-delay="100">
                 <span class="d-inline-block bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-1 mb-3"
                     style="font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;"><i
                         class="bi bi-briefcase-fill me-1"></i> Actively Looking</span>
@@ -594,13 +593,13 @@
     <!-- Contact -->
     <section id="contact">
         <div class="container">
-            <div class="text-center mb-5">
+            <div class="text-center mb-5" data-aos="fade-up">
                 <span class="section-label">Get In Touch</span>
                 <h2 class="section-title">Let's build something together</h2>
                 <p class="section-desc mx-auto">Have an internship opportunity or just want to connect?</p>
             </div>
             <div class="row g-4">
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
                     <div class="custom-card p-3 mb-3">
                         <div class="contact-item">
                             <div class="contact-icon"><i class="bi bi-envelope"></i></div>
@@ -649,7 +648,7 @@
                                 class="bi bi-envelope"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
                     <div class="custom-card p-4 p-lg-5">
                         <form class="needs-validation" id="contactForm" novalidate>
                             <div class="row g-3">
@@ -704,14 +703,14 @@
     <button id="backToTop" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         (function () {
             emailjs.init("GxuWYKaY294OUsyp3");
         })();
     </script>
+    <script src="script.js"></script>
 
 </body>
 
