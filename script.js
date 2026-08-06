@@ -140,12 +140,14 @@ if (contactForm) {
             let templateParams = {
                 from_name: name,
                 from_email: email,
+                name: name,
+                email: email,
                 reply_to: email,
                 subject: subject,
                 message: message
             };
 
-            emailjs.send("service_h1zrxkw", "template_glri3ds", templateParams)
+            emailjs.send("service_h1zrxkw", "template_glri3ds", templateParams, "GxuWYKaY294OUsyp3")
                 .then(function (response) {
                     var toastEl = document.getElementById('successToast');
                     if (toastEl) {
@@ -156,8 +158,9 @@ if (contactForm) {
                     contactForm.classList.remove('was-validated');
                 })
                 .catch(function (error) {
-                    alert("❌ Failed to send message. Please check your internet connection or try again later.");
-                    console.error("EmailJS Error:", error);
+                    var errDetail = (error && (error.text || error.status)) ? (error.text || ('Status: ' + error.status)) : 'Unknown error';
+                    alert("❌ EmailJS Failed: " + errDetail + "\n\nPlease verify Service ID, Template ID, and Gmail connection in EmailJS Dashboard.");
+                    console.error("EmailJS Detailed Error:", error);
                 })
                 .finally(function () {
                     if (submitBtn) {
