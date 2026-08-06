@@ -83,21 +83,28 @@ var statsObserver = new IntersectionObserver(function (entries) {
 statsObserver.observe(document.getElementById('aboutStats'));
 
 // Skill Bars
-document.querySelectorAll('.progress-bar[data-width]').forEach(function (bar) {
-    bar.style.width = '0%';
-    bar.style.transition = 'width 1.2s ease-in-out';
-});
-var skillObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-            document.querySelectorAll('.progress-bar[data-width]').forEach(function (bar) {
-                bar.style.width = bar.dataset.width + '%';
-            });
-            skillObserver.unobserve(entry.target);
+function animateSkillBars() {
+    document.querySelectorAll('.progress-bar[data-width]').forEach(function (bar) {
+        var w = bar.dataset.width || bar.getAttribute('data-width');
+        if (w) {
+            bar.style.width = w + '%';
         }
     });
-}, { threshold: 0.3 });
-skillObserver.observe(document.getElementById('skills'));
+}
+animateSkillBars();
+
+var skillSection = document.getElementById('skills');
+if (skillSection) {
+    var skillObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                animateSkillBars();
+                skillObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.05 });
+    skillObserver.observe(skillSection);
+}
 
 
 // ===============================
