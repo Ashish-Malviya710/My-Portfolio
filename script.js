@@ -21,12 +21,19 @@ function type() {
 }
 type();
 
-// Navbar scroll
+// Navbar scroll & Scroll-down indicator
 var navbar = document.getElementById('mainNav');
 var backToTop = document.getElementById('backToTop');
+var scrollDownEl = document.querySelector('.scroll-down');
+
 window.addEventListener('scroll', function () {
     navbar.classList.toggle('scrolled', window.scrollY > 50);
-    backToTop.style.display = window.scrollY > 500 ? 'flex' : 'none';
+    backToTop.style.display = window.scrollY > 400 ? 'flex' : 'none';
+    
+    if (scrollDownEl) {
+        scrollDownEl.style.opacity = window.scrollY > 60 ? '0' : '1';
+        scrollDownEl.style.pointerEvents = window.scrollY > 60 ? 'none' : 'auto';
+    }
     var scrollPos = window.scrollY + 120;
     document.querySelectorAll('section[id]').forEach(function (sec) {
         var top = sec.offsetTop, height = sec.offsetHeight, id = sec.getAttribute('id');
