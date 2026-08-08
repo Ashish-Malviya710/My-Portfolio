@@ -29,7 +29,7 @@ var scrollDownEl = document.querySelector('.scroll-down');
 window.addEventListener('scroll', function () {
     navbar.classList.toggle('scrolled', window.scrollY > 50);
     backToTop.style.display = window.scrollY > 400 ? 'flex' : 'none';
-    
+
     if (scrollDownEl) {
         scrollDownEl.style.opacity = window.scrollY > 60 ? '0' : '1';
         scrollDownEl.style.pointerEvents = window.scrollY > 60 ? 'none' : 'auto';
@@ -137,17 +137,19 @@ if (contactForm) {
             let subject = document.getElementById("subjectInput").value;
             let message = document.getElementById("messageInput").value.trim();
 
-            let templateParams = {
+            const templateParams = {
                 from_name: name,
                 from_email: email,
                 name: name,
                 email: email,
                 reply_to: email,
                 subject: subject,
-                message: message
+                title: subject,
+                message: message,
+                time: new Date().toLocaleString()
             };
 
-            emailjs.send("service_h1zrxkw", "template_glri3ds", templateParams, "GxuWYKaY294OUsyp3")
+            emailjs.send("service_cm26gol", "template_076l3tb", templateParams, "GxuWYKaY294OUsyp3")
                 .then(function (response) {
                     var toastEl = document.getElementById('successToast');
                     if (toastEl) {
@@ -159,7 +161,7 @@ if (contactForm) {
                 })
                 .catch(function (error) {
                     var errDetail = (error && (error.text || error.status)) ? (error.text || ('Status: ' + error.status)) : 'Unknown error';
-                    alert("❌ EmailJS Failed: " + errDetail + "\n\nPlease verify Service ID, Template ID, and Gmail connection in EmailJS Dashboard.");
+                    alert("❌ EmailJS Failed: " + errDetail + "\n\nPlease verify your Service ID, Template ID, and Gmail connection at https://dashboard.emailjs.com/admin");
                     console.error("EmailJS Detailed Error:", error);
                 })
                 .finally(function () {
